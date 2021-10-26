@@ -1,0 +1,30 @@
+/**index.wxss**/
+#score{
+  float: right;
+  margin-right: 20rpx;
+  color: red;
+}
+.unit{
+  font-size: 40rpx;
+  color: blueviolet;
+}
+.topic{
+  font-size: 35rpx;
+  font-weight: 700;
+}
+.options{
+  width: 21%;
+  margin:10rpx 30rpx 15rpx 0;
+  font-size: 30rpx;
+}
+.newoptions{
+  margin: 5rpx 0;
+}
+.sumbit{
+  margin-top: 30px;
+  background-color: blueviolet;
+  color: white;
+}
+#user{
+  color: deeppink;
+}

@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view>
+  <text id="user">姓名：蒋振东------学号：20190751027</text>
+  <text id="score" style="color: {{score.color}};display: {{score.display}};">成绩:{{score.num}}</text>
+</view>
+<form bindsubmit="formSubmit">
+<view>
+  <text class="unit">一、单选题</text>
+  <radio-group wx:for="{{radio}}" wx:key="index" name="radio{{index}}">
+    <view class="topic">{{index+1+'题、'+radio[index].topic}}</view>
+    <radio class="options" wx:for="{{item.answer}}" wx:key="index" value="{{options[index]}}">{{options[index]+'、'+item}}</radio>
+  </radio-group>
+  <text class="unit">二、多选题</text>
+  <checkbox-group wx:for="{{check}}" wx:key="index" name="checkbox{{index}}">
+    <view class="topic">{{index+1+"题、"+check[index].topic}}</view>
+    <checkbox class="newoptions" wx:for="{{item.answer}}" wx:key="index" value="{{options[index]}}">{{options[index]+"、"+item}}</checkbox>
+  </checkbox-group>
+</view>
+<button form-type="submit" class="sumbit">交卷</button>
+</form>
